@@ -1,184 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Connects the page to the main stylesheet -->
-<link rel="stylesheet" href="css/style.css">
-
-    <!-- Defines the character encoding -->
     <meta charset="UTF-8">
-
-    <!-- Makes the page responsive on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Browser tab title -->
-    <title>Thendo Events | Gallery</title>
+    <title>Event Gallery | Thendo Events & Catering Johannesburg</title>
+
+    <meta name="description" content="Explore the Thendo Events & Catering gallery featuring beautiful weddings, birthday celebrations, corporate events, catering and event décor.">
+
+    <meta name="keywords" content="event gallery Johannesburg, wedding décor, birthday decorations, corporate event styling, catering gallery, Thendo Events">
+
+    <meta name="author" content="Thendo Events & Catering">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Our Event Gallery | Thendo Events">
+    <meta property="og:description" content="Explore our collection of beautiful events and catering experiences.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- =====================================
-         HEADER AND NAVIGATION
-         ===================================== -->
-    <header>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span>THENDO</span>
+            <small>EVENTS & CATERING</small>
+        </div>
 
-        <!-- Website name -->
-        <h1>Thendo Events</h1>
-
-        <!-- Navigation links -->
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="services.html">Services</a> |
-            <a href="gallery.html">Gallery</a> |
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html" class="active">Gallery</a>
             <a href="contact.html">Contact</a>
         </nav>
-
     </header>
 
-
-    <!-- =====================================
-         MAIN CONTENT
-         ===================================== -->
     <main>
 
-          <!-- Gallery introduction -->
-          <section>
-               <div class="section-box">
-               <h2>Our Gallery</h2>
-
-               <p>
-                    Explore some of the events, celebrations and
-                    catering services provided by Thendo Events.
-               </p>
-               </div>
-          </section>
-
-
-        <!-- =====================================
-             WEDDING GALLERY
-             ===================================== -->
-        <section>
-            <div class="section-box">
-            <h2>Wedding Events</h2>
-
-            <img src="images/wedding.jpg"
-                 alt="Wedding event"
-                    width="400">
-
-            <img src="images/wedding2.jpg"
-                 alt="Wedding celebration"
-                 width="400">
-
-            <img src="images/wedding3.jpg"
-                 alt="Wedding event"
-                 width="400">
-
-            <img src="images/wedding4.jpg"
-                 alt="Wedding celebration"
-                 width="400">
-
-            <img src="images/wedding5.jpg"
-                 alt="Wedding event"
-                 width="400">
+        <!-- Gallery hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">A COLLECTION OF SPECIAL MOMENTS</p>
+                <h1>Our Gallery</h1>
+                <p>Explore the celebrations, details and experiences we help bring to life.</p>
             </div>
         </section>
 
-
-        <!-- =====================================
-             BIRTHDAY GALLERY
-             ===================================== -->
-        <section>
-            <div class="section-box">
-            <h2>Birthday Events</h2>
-
-            <img src="images/birthday1.jpg"
-                 alt="Birthday celebration"
-                 width="400">
-
-            <img src="images/birthday2.jpg"
-                 alt="Birthday event"
-                 width="400">
-            </div>
+        <!-- Gallery introduction -->
+        <section class="intro">
+            <p class="section-label">OUR WORK • YOUR MEMORIES</p>
+            <h2>Moments Worth Remembering</h2>
+            <p>
+                Explore some of the events, celebrations and
+                catering services provided by Thendo Events.
+            </p>
         </section>
 
+        <!-- Gallery section -->
+        <section class="gallery-section">
 
-        <!-- =====================================
-             CORPORATE GALLERY
-             ===================================== -->
-        <section>
-            <div class="section-box">
-            <h2>Corporate Events</h2>
-
-            <img src="images/corporate events.jpg"
-                 alt="Corporate event"
-                 width="400">
-
-            <img src="images/corporate event2.jpg"
-                 alt="Corporate event"
-                 width="400">
-
-            <img src="images/corporate event3.jpg"
-                 alt="Corporate event"
-                 width="400">
+            <!-- Gallery filters -->
+            <div class="gallery-filters">
+                <button class="gallery-filter active" data-filter="all">All</button>
+                <button class="gallery-filter" data-filter="wedding">Weddings</button>
+                <button class="gallery-filter" data-filter="birthday">Birthdays</button>
+                <button class="gallery-filter" data-filter="corporate">Corporate</button>
+                <button class="gallery-filter" data-filter="catering">Catering</button>
             </div>
+
+            <!-- Wedding gallery -->
+            <div class="gallery-category">
+                <p class="section-label">01 • LOVE & CELEBRATION</p>
+                <h2>Wedding Events</h2>
+
+                <div class="gallery-grid">
+                    <img src="images/wedding.jpg" alt="Wedding event" data-category="wedding">
+                    <img src="images/wedding2.jpg" alt="Wedding celebration" data-category="wedding">
+                    <img src="images/wedding3.jpg" alt="Wedding event" data-category="wedding">
+                    <img src="images/wedding4.jpg" alt="Wedding celebration" data-category="wedding">
+                    <img src="images/wedding5.jpg" alt="Wedding event" data-category="wedding">
+                </div>
+            </div>
+
+            <!-- Birthday gallery -->
+            <div class="gallery-category">
+                <p class="section-label">02 • JOYFUL MOMENTS</p>
+                <h2>Birthday Events</h2>
+
+                <div class="gallery-grid">
+                    <img src="images/birthday1.jpg" alt="Birthday celebration" data-category="birthday">
+                    <img src="images/birthday2.jpg" alt="Birthday event" data-category="birthday">
+                </div>
+            </div>
+
+            <!-- Corporate gallery -->
+            <div class="gallery-category">
+                <p class="section-label">03 • PROFESSIONAL GATHERINGS</p>
+                <h2>Corporate Events</h2>
+
+                <div class="gallery-grid">
+                    <img src="images/corporate events.jpg" alt="Corporate event" data-category="corporate">
+                    <img src="images/corporate event2.jpg" alt="Corporate event" data-category="corporate">
+                    <img src="images/corporate event3.jpg" alt="Corporate event" data-category="corporate">
+                </div>
+            </div>
+
+            <!-- Catering gallery -->
+            <div class="gallery-category">
+                <p class="section-label">04 • FOOD & REFRESHMENTS</p>
+                <h2>Catering</h2>
+
+                <div class="gallery-grid">
+                    <img src="images/catering1.jpg" alt="Catering service" data-category="catering">
+                    <img src="images/catering2.jpg" alt="Catering service" data-category="catering">
+                    <img src="images/catering3.jpg" alt="Catering service" data-category="catering">
+                    <img src="images/catering4.jpg" alt="Catering service" data-category="catering">
+                    <img src="images/catering drinks.jpg" alt="Catering drinks" data-category="catering">
+                    <img src="images/catering drinks2.jpg" alt="Catering drinks" data-category="catering">
+                </div>
+            </div>
+
         </section>
 
+        <!-- Image Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img src="" alt="Enlarged gallery image" id="lightboxImage">
+        </div>
 
-        <!-- =====================================
-             CATERING GALLERY
-             ===================================== -->
-        <section>
-            <div class="section-box">
-            <h2>Catering</h2>
+        <!-- Call to action -->
+        <section class="cta">
+            <p class="section-label">LET'S CREATE YOUR NEXT MEMORY</p>
+            <h2>Your Celebration Could Be Next</h2>
 
-            <img src="images/catering1.jpg"
-                 alt="Catering service"
-                 width="400">
+            <p>
+                Let Thendo Events help you plan an occasion
+                worth remembering.
+            </p>
 
-            <img src="images/catering2.jpg"
-                 alt="Catering service"
-                 width="400">
-
-            <img src="images/catering3.jpg"
-                 alt="Catering service"
-                 width="400">
-
-            <img src="images/catering4.jpg"
-                 alt="Catering service"
-                 width="400">
-
-            <img src="images/catering drinks.jpg"
-                 alt="Catering drinks"
-                 width="400">
-
-            <img src="images/catering drinks2.jpg"
-                 alt="Catering drinks"
-                 width="400">
-            </div>
+            <a href="contact.html" class="btn btn-primary">
+                Contact Us
+            </a>
         </section>
 
     </main>
 
-
-    <!-- =====================================
-         FOOTER
-         ===================================== -->
+    <!-- Footer -->
     <footer>
-
-        <p>
-            &copy; 2026 Thendo Events.
-            All Rights Reserved.
-        </p>
-
+        <p>&copy; 2026 Thendo Events & Catering. All Rights Reserved.</p>
     </footer>
-</body>
 
-</html>
-
-<!-- Connects the page to the JavaScript file -->
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
-
 </html>

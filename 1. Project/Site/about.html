@@ -1,51 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
+    
 <head>
-    <!-- Connects the page to the main stylesheet -->
-<link rel="stylesheet" href="css/style.css">
-
-    <!-- Defines the character encoding -->
     <meta charset="UTF-8">
-
-    <!-- Makes the page responsive on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Browser tab title -->
-    <title>Thendo Events | About</title>
+    <title>About Us | Thendo Events & Catering Johannesburg</title>
+
+    <meta name="description" content="Learn about Thendo Events & Catering, our passion for creating memorable celebrations, beautiful event styling and exceptional catering in Johannesburg.">
+
+    <meta name="keywords" content="about Thendo Events, event planning company Johannesburg, catering company, event styling, South African events">
+
+    <meta name="author" content="Thendo Events & Catering">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="About Thendo Events & Catering">
+    <meta property="og:description" content="Discover our story, passion and commitment to creating beautiful events.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
+
 
 <body>
 
-    <!-- =====================================
-         HEADER AND NAVIGATION
-         ===================================== -->
-    <header>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span>THENDO</span>
+            <small>EVENTS & CATERING</small>
+        </div>
 
-        <!-- Website name -->
-        <h1>Thendo Events</h1>
-
-        <!-- Navigation links -->
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="services.html">Services</a> |
-            <a href="gallery.html">Gallery</a> |
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
         </nav>
-
     </header>
 
-
-    <!-- =====================================
-         MAIN CONTENT
-         ===================================== -->
     <main>
 
-        <!-- About introduction -->
-        <section>
-            <div class="section-box">
-            <h2>About Thendo Events</h2>
+        <!-- About hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">OUR STORY • OUR PASSION</p>
+                <h1>About Thendo Events</h1>
+                <p>Creating unforgettable experiences, one celebration at a time.</p>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="intro">
+            <p class="section-label">WELCOME TO THENDO</p>
+            <h2>Where Every Event Has a Story</h2>
 
             <p>
                 Thendo Events is an event planning and catering
@@ -58,15 +70,11 @@
                 including weddings, birthday celebrations,
                 corporate events and other special gatherings.
             </p>
-            </div>
         </section>
 
-
-        <!-- =====================================
-             OUR STORY
-             ===================================== -->
-        <section>
-            <div class="section-box">
+        <!-- Our story -->
+        <section class="section-box">
+            <p class="section-label">HOW IT BEGAN</p>
             <h2>Our Story</h2>
 
             <p>
@@ -80,92 +88,77 @@
                 quality service and attention to the needs of
                 every client.
             </p>
+        </section>
+
+        <!-- Mission and vision -->
+        <section class="services-preview">
+            <p class="section-label">WHAT DRIVES US</p>
+            <h2>Our Purpose</h2>
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <h3>Our Mission</h3>
+                    <p>
+                        Our mission is to provide reliable event
+                        planning and catering services while
+                        creating experiences that clients and
+                        their guests will remember.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Our Vision</h3>
+                    <p>
+                        Our vision is to become a trusted event
+                        company known for quality service,
+                        creativity and successful events.
+                    </p>
+                </div>
+
             </div>
         </section>
 
-
-        <!-- =====================================
-             OUR MISSION
-             ===================================== -->
-        <section>
-            <div class="section-box">
-            <h2>Our Mission</h2>
-
-            <p>
-                Our mission is to provide reliable event planning
-                and catering services while creating experiences
-                that clients and their guests will remember.
-            </p>
-            </div>
-        </section>
-
-
-        <!-- =====================================
-             OUR VISION
-             ===================================== -->
-        <section>
-            <div class="section-box">
-            <h2>Our Vision</h2>
-
-            <p>
-                Our vision is to become a trusted event company
-                known for quality service, creativity and
-                successful events.
-            </p>
-            </div>
-        </section>
-
-
-        <!-- =====================================
-             ABOUT IMAGE
-             ===================================== -->
-        <section>
-            <div class="section-box">
+        <!-- Images -->
+        <section class="intro">
+            <p class="section-label">CELEBRATING SPECIAL MOMENTS</p>
             <h2>Making Every Event Special</h2>
 
-            <!-- Catering image from the website images folder -->
-            <img src="images/catering1.jpg"
-                 alt="Thendo Events catering service"
-                 width="500">
+            <div class="service-grid">
+                <div class="service-card">
+                    <img src="images/catering1.jpg"
+                         alt="Thendo Events catering service">
+                </div>
 
-                 <img src="images/wedding.jpg" 
-                 alt="Thendo Events Catering service"
-                 width="400">
+                <div class="service-card">
+                    <img src="images/wedding.jpg"
+                         alt="Wedding celebration by Thendo Events">
+                </div>
             </div>
         </section>
 
+        <!-- Call to action -->
+        <section class="cta">
+            <p class="section-label">LET'S CREATE SOMETHING SPECIAL</p>
+            <h2>Your Next Celebration Starts Here</h2>
 
-        <!-- =====================================
-             LINK TO SERVICES
-             ===================================== -->
-        <section>
-            <div class="section-box">
             <p>
                 Discover the services we offer for your next event.
             </p>
 
-            <a href="services.html">View Our Services</a>
-            </div>
+            <a href="services.html" class="btn btn-primary">
+                View Our Services
+            </a>
         </section>
 
     </main>
 
-
-    <!-- =====================================
-         FOOTER
-         ===================================== -->
+    <!-- Footer -->
     <footer>
-
-        <p>
-            &copy; 2026 Thendo Events.
-            All Rights Reserved.
-        </p>
-
+        <p>&copy; 2026 Thendo Events & Catering. All Rights Reserved.</p>
     </footer>
 
-<!-- Connects the page to the JavaScript file -->
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
-
 </html>

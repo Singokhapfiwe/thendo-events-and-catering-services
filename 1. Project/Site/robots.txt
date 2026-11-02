@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://astonishing-syrniki-1acab0.netlify.app/sitemap.xml
