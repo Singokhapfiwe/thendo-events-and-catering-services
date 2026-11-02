@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Enquiry | Thendo Events & Catering Johannesburg</title>
+
+    <meta name="description" content="Submit an event enquiry to Thendo Events & Catering. Tell us about your wedding, birthday, corporate event or catering requirements in Johannesburg.">
+
+    <meta name="keywords" content="event enquiry Johannesburg, event booking enquiry, wedding enquiry, birthday event enquiry, catering enquiry">
+
+    <meta name="author" content="Thendo Events & Catering">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Make an Event Enquiry | Thendo Events">
+    <meta property="og:description" content="Tell us about your special occasion and let us help you plan it.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span>THENDO</span>
+            <small>EVENTS & CATERING</small>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">✦ LET'S PLAN SOMETHING SPECIAL ✦</p>
+
+                <h1>
+                    Tell Us About
+                    <span>Your Event.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Share your ideas and event requirements with us.
+                    We would love to help bring your vision to life.
+                </p>
+            </div>
+        </section>
+
+        <section class="intro">
+            <p class="section-label">EVENT ENQUIRY</p>
+
+            <h2>
+                Your Celebration,
+                <span>Your Vision.</span>
+            </h2>
+
+            <p>
+                Complete the form below with your event details.
+                Our team can then review your enquiry and discuss
+                the next steps with you.
+            </p>
+        </section>
+
+        <section class="section-box">
+
+            <form id="enquiryForm" action="#" method="post">
+
+                <h2>Personal Information</h2>
+
+                <label for="fullName">Full Name *</label>
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    minlength="2"
+                    maxlength="80"
+                    required
+                >
+
+                <label for="email">Email Address *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+
+                <label for="phone">Phone Number *</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9+ ]{7,15}"
+                    title="Enter a valid phone number."
+                    required
+                >
+
+                <h2>Event Information</h2>
+
+                <label for="eventType">Type of Event *</label>
+                <select id="eventType" name="eventType" required>
+                    <option value="">Select your event</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Corporate Event">Corporate Event</option>
+                    <option value="Catering">Catering</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="eventDate">Preferred Event Date *</label>
+                <input
+                    type="date"
+                    id="eventDate"
+                    name="eventDate"
+                    required
+                >
+
+                <label for="guests">Estimated Number of Guests *</label>
+                <input
+                    type="number"
+                    id="guests"
+                    name="guests"
+                    min="1"
+                    max="10000"
+                    required
+                >
+
+                <label for="budget">Estimated Budget (R) *</label>
+                <input
+                    type="number"
+                    id="budget"
+                    name="budget"
+                    min="0"
+                    step="100"
+                    required
+                >
+
+                <label for="location">Event Location *</label>
+                <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    maxlength="150"
+                    placeholder="Enter your event location"
+                    required
+                >
+
+                <label for="requirements">Additional Requirements</label>
+                <textarea
+                    id="requirements"
+                    name="requirements"
+                    rows="5"
+                    maxlength="1000"
+                    placeholder="Tell us more about your event..."
+                ></textarea>
+
+                <button type="submit" class="btn primary">
+                    Submit Enquiry
+                </button>
+
+                <p id="enquiryFeedback" role="status" aria-live="polite"></p>
+
+                <p>
+                    Submitting this form does not confirm a booking,
+                    price or event availability. These details must
+                    be discussed and confirmed by our team.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            THENDO EVENTS & CATERING
+        </div>
+
+        <p>Creating beautiful moments, one event at a time.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Thendo Events & Catering. All rights reserved.
+        </p>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
